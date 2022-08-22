@@ -1,0 +1,20 @@
+<?php defined('BASEPATH') or exit('No direct script access allowed');
+
+class model_user_kategori extends CI_Model
+{
+
+    public function tampil_data()
+    {
+
+        return $this->db->get('kategori_materi')->result_array();
+    }
+    function get_berita_by_kode($kode)
+    {
+        $hsl = $this->db->query("SELECT * FROM informasi WHERE id_informasi='$kode'");
+        return $hsl;
+    }
+    public function detail_informasi($where, $table)
+    {
+        return $this->db->get_where($table, $where);
+    }
+}
