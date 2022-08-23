@@ -1,1 +1,1 @@
-Sistem Informasi Kendari English Clun
+Sistem Informasi Kendari English Club
